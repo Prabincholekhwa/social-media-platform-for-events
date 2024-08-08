@@ -46,11 +46,11 @@ Before running the application locally, ensure you have the following dependenci
 
 # Clone the repository
 
-git clone git@github.com:Prabincholekhwa/social-media-events.git
+git clone git@github.com:Prabincholekhwa/socila-media-platform-for-events.git
 
 # Navigate to the project directory
 
-cd social-media-events
+cd socila-media-platform-for-events
 
 # Install project dependencies
 
