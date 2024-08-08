@@ -1,0 +1,44 @@
+{
+	"info": {
+		"_postman_id": "f15c06c9-bb0a-4d89-aad7-be9fa0e12359",
+		"name": "Notification",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36789429"
+	},
+	"item": [
+		{
+			"name": "Get All Notification",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI4NjEzOGEzZTU4NGE5ZWYiLCJlbWFpbCI6IlJvbmFsZG9AZ21haWwuY29tIiwidXNlckFnZW50IjoiUG9zdG1hblJ1bnRpbWUvNy40MS4wIiwiaXNzIjoic29jaWFsX21lZGlhX2V2ZW50IiwiaWF0IjoxNzIzMTAzMTM4fQ.pyAJiMdwgvF_HHDnkqReuG8gfQw5xyHErOgb3OkzsKc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:4001/notifications?page=1&size=10",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"notifications"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "size",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

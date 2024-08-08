@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "e019dab3-a807-4982-b771-c02656fa5702",
+		"name": "Comment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36789429"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjFmMjU0ODg4MmI5MDQ4ZWIiLCJlbWFpbCI6InByYWJpbmNob2xla2h3YTM1QGdtYWlsLmNvbSIsInVzZXJBZ2VudCI6IlBvc3RtYW5SdW50aW1lLzcuNDEuMCIsImlzcyI6InNvY2lhbF9tZWRpYV9ldmVudCIsImlhdCI6MTcyMzAxNTkxMH0.1IgT3fxAa3PRDi1gVCi8BFIJvuRaKvv9UdQTU_jcaYA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"eventId\":\"274783dcf5ebdb3b\",\r\n    \"description\":\"Very Goods\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/v1/comments",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"v1",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjFmMjU0ODg4MmI5MDQ4ZWIiLCJlbWFpbCI6InByYWJpbmNob2xla2h3YTM1QGdtYWlsLmNvbSIsInVzZXJBZ2VudCI6IlBvc3RtYW5SdW50aW1lLzcuNDEuMCIsImlzcyI6InNvY2lhbF9tZWRpYV9ldmVudCIsImlhdCI6MTcyMzAxNTkxMH0.1IgT3fxAa3PRDi1gVCi8BFIJvuRaKvv9UdQTU_jcaYA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\":\"Heysss\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/v1/comments/7d8cb3ca209657af",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"v1",
+						"comments",
+						"7d8cb3ca209657af"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImYwNzU4OWQ1YTMxYzA5MTIiLCJlbWFpbCI6InByYWJpbmNob2xla2h3YUBnbWFpbC5jb20iLCJ1c2VyQWdlbnQiOiJQb3N0bWFuUnVudGltZS83LjQxLjAiLCJpc3MiOiJzb2NpYWxfbWVkaWFfZXZlbnQiLCJpYXQiOjE3MjMwMTQ5NjB9.We3kq8bGAd8ah5xVaxLfMV69KrwFJLZ5xf_jlqs0dX4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:4000/v1/comments/7d8cb3ca209657af",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"v1",
+						"comments",
+						"7d8cb3ca209657af"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get By Event Id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,231 @@
+{
+	"info": {
+		"_postman_id": "52d6aad8-c76f-4f46-8983-e6f9d96df4c1",
+		"name": "Events",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36789429"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "WrongAuthorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjFmMjU0ODg4MmI5MDQ4ZWIiLCJlbWFpbCI6InByYWJpbmNob2xla2h3YTM1QGdtYWlsLmNvbSIsInVzZXJBZ2VudCI6IlBvc3RtYW5SdW50aW1lLzcuNDEuMCIsImlzcyI6InNvY2lhbF9tZWRpYV9ldmVudCIsImlhdCI6MTcyMzAxNTkxMH0.1IgT3fxAa3PRDi1gVCi8BFIJvuRaKvv9UdQTU_jcaYA",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI4NjEzOGEzZTU4NGE5ZWYiLCJlbWFpbCI6IlJvbmFsZG9AZ21haWwuY29tIiwidXNlckFnZW50IjoiUG9zdG1hblJ1bnRpbWUvNy40MS4wIiwiaXNzIjoic29jaWFsX21lZGlhX2V2ZW50IiwiaWF0IjoxNzIzMTA0Njc0fQ.V6WH_vgv2zAbR43IssnJ8oWeJ5BvUYztuPb-tIDIssU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Sports Events India\",\r\n    \"description\":\"Sports Fest Events\",\r\n    \"time\":\"2024-05-06T14:30:00+05:45\",\r\n    \"categoryId\":\"a57ed7e029bb8225\",\r\n    \"location\":\"India\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4001/events/92e4fe28f7dd5e3e",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"events",
+						"92e4fe28f7dd5e3e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Event Image",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI4NjEzOGEzZTU4NGE5ZWYiLCJlbWFpbCI6IlJvbmFsZG9AZ21haWwuY29tIiwidXNlckFnZW50IjoiUG9zdG1hblJ1bnRpbWUvNy40MS4wIiwiaXNzIjoic29jaWFsX21lZGlhX2V2ZW50IiwiaWF0IjoxNzIzMTA0Njc0fQ.V6WH_vgv2zAbR43IssnJ8oWeJ5BvUYztuPb-tIDIssU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/Prabin Cholekhwa/Pictures/male mode.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4001/events/image/92e4fe28f7dd5e3e",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"events",
+						"image",
+						"92e4fe28f7dd5e3e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImYwNzU4OWQ1YTMxYzA5MTIiLCJlbWFpbCI6InByYWJpbmNob2xla2h3YUBnbWFpbC5jb20iLCJ1c2VyQWdlbnQiOiJQb3N0bWFuUnVudGltZS83LjQxLjAiLCJpc3MiOiJzb2NpYWxfbWVkaWFfZXZlbnQiLCJpYXQiOjE3MjMwMTQ5NjB9.We3kq8bGAd8ah5xVaxLfMV69KrwFJLZ5xf_jlqs0dX4",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "localhost:4001/events/274783dcf5ebdb3b",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"events",
+						"274783dcf5ebdb3b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Own Events",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImYwNzU4OWQ1YTMxYzA5MTIiLCJlbWFpbCI6InByYWJpbmNob2xla2h3YUBnbWFpbC5jb20iLCJ1c2VyQWdlbnQiOiJQb3N0bWFuUnVudGltZS83LjQxLjAiLCJpc3MiOiJzb2NpYWxfbWVkaWFfZXZlbnQiLCJpYXQiOjE3MjMwMjcxMjd9.8LHPXGfx5ATeWrKr_7DrOHfm3o0_koOEc82M2FkxYV0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:4001/v1/events/own",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"v1",
+						"events",
+						"own"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Feed Events",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImYwNzU4OWQ1YTMxYzA5MTIiLCJlbWFpbCI6InByYWJpbmNob2xla2h3YUBnbWFpbC5jb20iLCJ1c2VyQWdlbnQiOiJQb3N0bWFuUnVudGltZS83LjQxLjAiLCJpc3MiOiJzb2NpYWxfbWVkaWFfZXZlbnQiLCJpYXQiOjE3MjMwMjcxMjd9.8LHPXGfx5ATeWrKr_7DrOHfm3o0_koOEc82M2FkxYV0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:4001/v1/events/feeds",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"v1",
+						"events",
+						"feeds"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Events From UserId",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQ4N2RkNzQ0OTE1MTZiNGUiLCJlbWFpbCI6IlNoeWFtZ2hhcnRpQGdtYWlsLmNvbSIsInVzZXJBZ2VudCI6IlBvc3RtYW5SdW50aW1lLzcuNDEuMCIsImlzcyI6InNvY2lhbF9tZWRpYV9ldmVudCIsImlhdCI6MTcyMzEwNjgxOH0.bhpW1iV5GsNFFZ8r4b1XazKiYrvkqK3bpJrPivLAeEY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:4001/events?userId=286138a3e584a9ef&page=1&size=10&categoryId=a57ed7e029bb8225&fromDateTime=2024-04-06T08:45:00.000Z&toDateTime=2024-05-06T08:45:00.000Z&searchKeyword=Fest",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"events"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "286138a3e584a9ef"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "size",
+							"value": "10"
+						},
+						{
+							"key": "categoryId",
+							"value": "a57ed7e029bb8225"
+						},
+						{
+							"key": "fromDateTime",
+							"value": "2024-04-06T08:45:00.000Z"
+						},
+						{
+							"key": "toDateTime",
+							"value": "2024-05-06T08:45:00.000Z"
+						},
+						{
+							"key": "searchKeyword",
+							"value": "Fest"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

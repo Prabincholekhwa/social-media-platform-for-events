@@ -1,0 +1,235 @@
+{
+	"info": {
+		"_postman_id": "8ecda0a4-9b11-4d9f-93eb-a1f6d9837b2f",
+		"name": "Users",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36789429"
+	},
+	"item": [
+		{
+			"name": "SignUp",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Shyam Gharti Magar\",\r\n    \"email\":\"Shyamgharti@gmail.com\",\r\n    \"password\":\"Hello@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4001/users",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"Shyamgharti@gmail.com\",\r\n    \"password\":\"Hello@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4001/users/login",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Own Profile",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQ4N2RkNzQ0OTE1MTZiNGUiLCJlbWFpbCI6IlNoeWFtZ2hhcnRpQGdtYWlsLmNvbSIsInVzZXJBZ2VudCI6IlBvc3RtYW5SdW50aW1lLzcuNDEuMCIsImlzcyI6InNvY2lhbF9tZWRpYV9ldmVudCIsImlhdCI6MTcyMzEwMjc0MX0.su0njzWVPXYDYm79HmCsZN_sYxg0ZE8JkyoySWPdq1g",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:4001/users/profile",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"users",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkMzQ2M2RhODViM2RhZDgiLCJlbWFpbCI6InByYWJpbmNob2xla2h3YUBnbWFpbC5jb20iLCJ1c2VyQWdlbnQiOiJQb3N0bWFuUnVudGltZS83LjQxLjAiLCJpc3MiOiJzb2NpYWxfbWVkaWFfZXZlbnQiLCJpYXQiOjE3MjMwMTE3Mjd9._b9KBBs3CasgtLDvDmn3RwR2_uFpw_weY-vCCZrARUY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:4000/v1/users/profile",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"v1",
+						"users",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Profile Image",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImYwNzU4OWQ1YTMxYzA5MTIiLCJlbWFpbCI6InByYWJpbmNob2xla2h3YUBnbWFpbC5jb20iLCJ1c2VyQWdlbnQiOiJQb3N0bWFuUnVudGltZS83LjQxLjAiLCJpc3MiOiJzb2NpYWxfbWVkaWFfZXZlbnQiLCJpYXQiOjE3MjMwMTI0NjJ9.c4QIfIKyOzh7Hd1eatAiTR8-kS8kdIpDn-vNmxVJigs",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:4000/v1/users/profile-image",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"v1",
+						"users",
+						"profile-image"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get By Id(Other Users Profile)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjFmMjU0ODg4MmI5MDQ4ZWIiLCJlbWFpbCI6InByYWJpbmNob2xla2h3YTM1QGdtYWlsLmNvbSIsInVzZXJBZ2VudCI6IlBvc3RtYW5SdW50aW1lLzcuNDEuMCIsImlzcyI6InNvY2lhbF9tZWRpYV9ldmVudCIsImlhdCI6MTcyMzAxMzg4M30.0AH7LI4sEkkotCB5Q0TyxHQ3auvgeXkzzAypoPGyAio",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:4000/v1/users/f07589d5a31c0912",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"v1",
+						"users",
+						"f07589d5a31c0912"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change Password",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQ4N2RkNzQ0OTE1MTZiNGUiLCJlbWFpbCI6IlNoeWFtZ2hhcnRpQGdtYWlsLmNvbSIsInVzZXJBZ2VudCI6IlBvc3RtYW5SdW50aW1lLzcuNDEuMCIsImlzcyI6InNvY2lhbF9tZWRpYV9ldmVudCIsImlhdCI6MTcyMzEwMjc0MX0.su0njzWVPXYDYm79HmCsZN_sYxg0ZE8JkyoySWPdq1g",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"oldPassword\":\"Hello@123\",\r\n    \"newPassword\":\"Hello@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4001/users/change-password",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"users",
+						"change-password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Log Out",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjFmMjU0ODg4MmI5MDQ4ZWIiLCJlbWFpbCI6InByYWJpbmNob2xla2h3YTM1QGdtYWlsLmNvbSIsInVzZXJBZ2VudCI6IlBvc3RtYW5SdW50aW1lLzcuNDEuMCIsImlzcyI6InNvY2lhbF9tZWRpYV9ldmVudCIsImlhdCI6MTcyMzAxMzg4M30.0AH7LI4sEkkotCB5Q0TyxHQ3auvgeXkzzAypoPGyAio",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:4000/v1/users/logout",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"v1",
+						"users",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

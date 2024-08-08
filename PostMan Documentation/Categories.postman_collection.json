@@ -1,0 +1,34 @@
+{
+	"info": {
+		"_postman_id": "5f4c0fbf-80cb-4848-89f7-995b24c4491c",
+		"name": "Categories",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36789429"
+	},
+	"item": [
+		{
+			"name": "Get Categories(Event)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImYwNzU4OWQ1YTMxYzA5MTIiLCJlbWFpbCI6InByYWJpbmNob2xla2h3YUBnbWFpbC5jb20iLCJ1c2VyQWdlbnQiOiJQb3N0bWFuUnVudGltZS83LjQxLjAiLCJpc3MiOiJzb2NpYWxfbWVkaWFfZXZlbnQiLCJpYXQiOjE3MjMwMTQ5NjB9.We3kq8bGAd8ah5xVaxLfMV69KrwFJLZ5xf_jlqs0dX4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:4001/categories",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"categories"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

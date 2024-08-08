@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "ffee07ac-d094-48d6-8764-dd45cc82540a",
+		"name": "Like",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36789429"
+	},
+	"item": [
+		{
+			"name": "Toggle-Like-Event",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImYwNzU4OWQ1YTMxYzA5MTIiLCJlbWFpbCI6InByYWJpbmNob2xla2h3YUBnbWFpbC5jb20iLCJ1c2VyQWdlbnQiOiJQb3N0bWFuUnVudGltZS83LjQxLjAiLCJpc3MiOiJzb2NpYWxfbWVkaWFfZXZlbnQiLCJpYXQiOjE3MjMwMTQ5NjB9.We3kq8bGAd8ah5xVaxLfMV69KrwFJLZ5xf_jlqs0dX4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:4000/v1/likes/toggle/event/274783dcf5ebdb3b",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"v1",
+						"likes",
+						"toggle",
+						"event",
+						"274783dcf5ebdb3b"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

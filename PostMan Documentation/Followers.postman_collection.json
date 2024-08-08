@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "5ca8af21-67c5-48ff-bb42-d69a74c35d85",
+		"name": "Followers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36789429"
+	},
+	"item": [
+		{
+			"name": "Toggle Follow",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQ4N2RkNzQ0OTE1MTZiNGUiLCJlbWFpbCI6IlNoeWFtZ2hhcnRpQGdtYWlsLmNvbSIsInVzZXJBZ2VudCI6IlBvc3RtYW5SdW50aW1lLzcuNDEuMCIsImlzcyI6InNvY2lhbF9tZWRpYV9ldmVudCIsImlhdCI6MTcyMzEwNjgxOH0.bhpW1iV5GsNFFZ8r4b1XazKiYrvkqK3bpJrPivLAeEY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:4001/followers/toggle/host/286138a3e584a9ef",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"followers",
+						"toggle",
+						"host",
+						"286138a3e584a9ef"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Own Followers",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQ4N2RkNzQ0OTE1MTZiNGUiLCJlbWFpbCI6IlNoeWFtZ2hhcnRpQGdtYWlsLmNvbSIsInVzZXJBZ2VudCI6IlBvc3RtYW5SdW50aW1lLzcuNDEuMCIsImlzcyI6InNvY2lhbF9tZWRpYV9ldmVudCIsImlhdCI6MTcyMzEwNjgxOH0.bhpW1iV5GsNFFZ8r4b1XazKiYrvkqK3bpJrPivLAeEY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:4001/followers/own?page=1&size=10",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"followers",
+						"own"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "size",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
